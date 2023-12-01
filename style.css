@@ -1,0 +1,235 @@
+@import url('https://db.onlinewebfonts.com/c/775c3814e9c1f228d495333e07580d59?family=Andy+Bold+V2');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style: none;
+    color: #000;
+}
+
+body {
+    
+    background-size: cover;
+    width: 100vw;
+    background-repeat: no-repeat;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_pokehouse {
+    width: 80%;
+    height: auto;
+} 
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+    color: #2d5ab2;
+    transition: 0.4s;    
+}
+
+i:hover {
+    transform: scale(1.2);
+    color:#ff2c2a;
+}
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0px;    
+}
+
+h2 {
+    font-family: "Andy Bold V2", sans-serif;
+    margin-bottom: 20px;
+    color: #2d5ab2;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.main-content {
+    width: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0px 20px;
+}
+
+.cards {
+    width: 250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    transition: 0.5s;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cards:hover {
+    transform: scale(1.03);
+}
+
+.character-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(250,199,5,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.character-name {
+    font-family: "Andy Bold V2", sans-serif;
+    color: #2d5ab2;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px #fac705 ;
+    
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #2d5ab2;
+    font-weight: 700;
+    font-family: "Andy Bold V2", sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2d5ab2;
+    color: gold;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0px 20px 0px;
+}
+
+.footer-logo {
+    background-image: url(./assets/logo.png);
+    width: 220px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.copyright {
+    font-family: "Andy Bold V2", sans-serif;
+    color: #2d5ab2;
+    font-weight: 500;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal_content {
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details {
+    font-family: "Andy Bold V2", sans-serif;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+
+.change-icon > .fa + .fa,
+.change-icon:hover > .fa {
+  display: none;
+}
+.change-icon:hover > .fa + .fa {
+  display: inherit;
+}
+
+.change-icon > .fa-brands + .fa-brands,
+.change-icon:hover > .fa-brands {
+  display: none;
+}
+.change-icon:hover > .fa-brands + .fa-brands {
+  display: inherit;
+}
