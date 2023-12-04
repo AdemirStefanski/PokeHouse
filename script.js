@@ -110,7 +110,7 @@ async function loadCharacters(url) {
                     
                     const pokeWeight = document.createElement("span")
                     pokeWeight.className = "character-details"
-                    pokeWeight.innerText = `Height: ${parseFloat(dataweight*0.1).toFixed(1)} kg` ;
+                    pokeWeight.innerText = `Weight: ${parseFloat(dataweight*0.1).toFixed(1)} kg` ;
                     
                                   
                     modalContent.appendChild(pokeHeight)
